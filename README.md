@@ -29,14 +29,19 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+   To declare a class component by extending the react.component parent class. Sue the constructor function to set up some state and also need to call super in order to access the “this”, and also need to include render method.
 
 2. Describe the different phases of the component lifecycle.
+   The Birth/Mounting phase is the phase when the component is being built out from the ground up;Growth Phase is when the component data is been updated; and Death/Unmounting Phase is when the component been removed from the screen.
 
 3. Demonstrate an understanding of class component lifecycle methods.
+   The lifecycle methods are called at different times in the class component lifecycle. In the initialization, before the mounting has began the class’s constructor function is called. When the component is initially created, it gets mounted onto the DOM, the componentDidMounted method get called just after the render method, then when a component’s state is changed, the componentDidUpdated method gets just after the component is rendered and updated; finally the componentUnmounted gets called and the component gets removed from the page.
 
 4. Define stateful logic.
+   Stateful logic can be a function that handles a click event to maybe a function that sets toggle state, or even a function that formats data before it gets displayed
 
 5. Describe how to test a React component with React Testing Library.
+   The react testing library is structured as AAR, Arrange, Act, Assert. First we arrange our component by giving it a description of the test and select the element to be to test on using the query functions, and we Act the test by calling a function that will return a result, finally we assert what to expect out of the testing.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
